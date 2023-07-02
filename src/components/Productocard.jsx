@@ -37,7 +37,6 @@ const Productocard = ({producto}) => {
                 </div>
 
                 <p className={`${unidad === 'bulto' ? 'block' : 'hidden'} text-2xl text-center  mb-4`}>Bulto x {bulto} unidades</p>
-                <button className="boton-informacion py-4 px-3 rounded-xl uppercase font-bold text-2xl mt-1" onClick={e => informacionproducto(e, id)}>Ver mas informacion</button>
                 
                 <div className="seccion-carrito mt-5">
                     <input type="number" min='1' className="cantidad-producto" defaultValue='1' name={"cantidad"+id} onChange={e => setCantidad(e.target.value)}/>
